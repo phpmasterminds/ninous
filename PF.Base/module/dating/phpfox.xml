@@ -1,0 +1,275 @@
+<module>
+	<data>
+		<module_id>dating</module_id>
+		<product_id>dating</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu><![CDATA[a:5:{s:9:"Statistic";a:1:{s:3:"url";a:2:{i:0;s:6:"dating";i:1;s:4:"stat";}}s:13:"Dating Fields";a:1:{s:3:"url";a:2:{i:0;s:6:"dating";i:1;s:5:"index";}}s:9:"Add Field";a:1:{s:3:"url";a:2:{i:0;s:6:"dating";i:1;s:3:"add";}}s:13:"Manage Photos";a:1:{s:3:"url";a:2:{i:0;s:6:"dating";i:1;s:5:"photo";}}s:13:"Manage Videos";a:1:{s:3:"url";a:2:{i:0;s:6:"dating";i:1;s:5:"video";}}}]]></menu>
+		<phrase_var_name>Dating System</phrase_var_name>
+		<version>4.9</version>
+		<author>FoxExpert</author>
+		<vendor>http://foxexpert.com</vendor>
+		<description>product for Dating system</description>
+		<apps_icon>https://d2h79mkp7etn4r.cloudfront.net/icon/2017/10/85adee24ee366e4cd169d66f107a9e4b.png</apps_icon>
+	</data>
+	<menus>
+		<menu module_id="dating" parent_var_name="" m_connection="main" var_name="menu_dating_dating_369ae4ffe719c8096fab2bc931459fe3" ordering="2" url_value="dating" version_id="4.6.0" disallow_access="" module="dating" />
+	</menus>
+	<settings>
+		<setting group="" module_id="dating" is_hidden="0" type="boolean" var_name="enablevideo" phrase_var_name="Enable video" ordering="0" version_id="4.6">1</setting>
+		<setting group="" module_id="dating" is_hidden="0" type="boolean" var_name="enablephoto" phrase_var_name="Enable Photo" ordering="1" version_id="4.6">1</setting>
+		<setting group="" module_id="dating" is_hidden="0" type="string" var_name="maxvideo" phrase_var_name="Max size for video(mb)" ordering="0" version_id="4.6">100</setting>
+		<setting group="" module_id="dating" is_hidden="0" type="string" var_name="maxphoto" phrase_var_name="Max size for photo(mb)" ordering="1" version_id="4.6">100</setting>
+		<setting group="" module_id="dating" is_hidden="0" type="string" var_name="dayfeatured" phrase_var_name="Cost of featured for 1 day " ordering="1" version_id="4.6">1</setting>
+		<setting group="" module_id="dating" is_hidden="0" type="string" var_name="monthfeatured" phrase_var_name="Cost of featured for 1 month" ordering="1" version_id="4.6">100</setting>
+		<setting group="" module_id="dating" is_hidden="0" type="string" var_name="weekfeatured" phrase_var_name="Cost of featured for 1 week " ordering="1" version_id="4.6">10</setting>
+		<setting group="" module_id="dating" is_hidden="0" type="boolean" var_name="enableparticipation" phrase_var_name="Enable Participate mode (users will be asked to participate on Dating module before showing to other users)" ordering="0" version_id="4.6">1</setting>
+	</settings>
+	<blocks>
+		<block type_id="0" m_connection="" module_id="dating" component="hidedating" location="6" is_active="1" ordering="11" disallow_access="" can_move="0">
+			<title>Hide Dating</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="dating.index" module_id="dating" component="new" location="1" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title>New</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="dating.mutual" module_id="dating" component="new" location="1" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title>new</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="dating.already" module_id="dating" component="new" location="1" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title>new</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="dating.wholike" module_id="dating" component="new" location="1" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title>new</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="dating.mylike" module_id="dating" component="new" location="1" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title>new</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="dating.favourite" module_id="dating" component="new" location="1" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title>new</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="dating.index" module_id="dating" component="sponsored" location="11" is_active="1" ordering="2" disallow_access="" can_move="0">
+			<title>new</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="core.index-member" module_id="dating" component="sponsored" location="11" is_active="1" ordering="18" disallow_access="" can_move="0">
+			<title>Sponsored users</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="core.index-member" module_id="dating" component="home" location="7" is_active="1" ordering="17" disallow_access="" can_move="0">
+			<title>Home filter</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="core.index-member" module_id="dating" component="participate" location="3" is_active="1" ordering="1000" disallow_access="" can_move="0">
+			<title>Participate Block</title>
+			<source_code />
+			<source_parsed />
+		</block>
+	</blocks>
+	<components>
+		<component module_id="dating" component="hidedating" m_connection="" module="dating" is_controller="0" is_block="1" is_active="1" allowed_connections="" />
+		<component module_id="dating" component="index" m_connection="dating.index" module="dating" is_controller="1" is_block="0" is_active="1" allowed_connections="" />
+		<component module_id="dating" component="wholike" m_connection="dating.wholike" module="dating" is_controller="1" is_block="0" is_active="1" allowed_connections="" />
+		<component module_id="dating" component="mutual" m_connection="dating.mutual" module="dating" is_controller="1" is_block="0" is_active="1" allowed_connections="" />
+		<component module_id="dating" component="mylike" m_connection="dating.mylike" module="dating" is_controller="1" is_block="0" is_active="1" allowed_connections="" />
+		<component module_id="dating" component="already" m_connection="dating.already" module="dating" is_controller="1" is_block="0" is_active="1" allowed_connections="" />
+		<component module_id="dating" component="favourite" m_connection="dating.favourite" module="dating" is_controller="1" is_block="0" is_active="1" allowed_connections="" />
+		<component module_id="dating" component="sponsored" m_connection="" module="dating" is_controller="0" is_block="1" is_active="1" allowed_connections="" />
+		<component module_id="dating" component="mostliked" m_connection="" module="dating" is_controller="0" is_block="1" is_active="1" allowed_connections="" />
+		<component module_id="dating" component="new" m_connection="" module="dating" is_controller="0" is_block="1" is_active="1" allowed_connections="" />
+		<component module_id="dating" component="home" m_connection="" module="dating" is_controller="0" is_block="1" is_active="1" allowed_connections="" />
+		<component module_id="dating" component="participate" m_connection="" module="dating" is_controller="0" is_block="1" is_active="1" allowed_connections="" />
+	</components>
+	<phrases>
+		<phrase var_name="Statistic" added="1624260967">Statistic</phrase>
+		<phrase var_name="Dating Fields" added="1624260967">Dating Fields</phrase>
+		<phrase var_name="Add Field" added="1624260967">Add Field</phrase>
+		<phrase var_name="Manage Photos" added="1624260967">Manage Photos</phrase>
+		<phrase var_name="Manage Videos" added="1624260967">Manage Videos</phrase>
+		<phrase var_name="Dating sponsored" added="1624260967">Dating sponsored</phrase>
+		<phrase var_name="Dating Sponsor" added="1624260967">Dating Sponsor</phrase>
+		<phrase var_name="Dating Profile" added="1624260967">Dating Profile</phrase>
+		<phrase var_name="Dating System" added="1624260967">Dating System</phrase>
+		<phrase var_name="Video Successfully added!" added="1624260967">Video Successfully added!</phrase>
+		<phrase var_name="Photo Successfully added!" added="1624260967">Photo Successfully added!</phrase>
+		<phrase var_name="dating_participate_welcome" added="1624260967">To be able to see our dating profiles, you need to participate in our module, just click button below and see  thousands profiles!</phrase>
+		<phrase var_name="menu_dating_dating_369ae4ffe719c8096fab2bc931459fe3" added="1624260967">Dating System</phrase>
+		<phrase var_name="To be able to see our dating profiles, you need to participate in our module, just click button below and see  thousands profiles!" added="1624260967">To be able to see our dating profiles, you need to participate in our module, just click button below and see  thousands profiles!</phrase>
+		<phrase var_name="Enable Photo" added="1624260967">Enable Photo</phrase>
+		<phrase var_name="Purchasing this subscription your agreed our terms of services" added="1624260967">Purchasing this subscription your agreed our terms of services</phrase>
+		<phrase var_name="Order Now" added="1624260967">Order Now</phrase>
+		<phrase var_name="Daily Access" added="1624260967">Daily Access</phrase>
+		<phrase var_name="Weekly Access" added="1624260967">Weekly Access</phrase>
+		<phrase var_name="For 1 week" added="1624260967">For 1 week</phrase>
+		<phrase var_name="Monthly Access" added="1624260967">Monthly Access</phrase>
+		<phrase var_name="For 1 month" added="1624260967">For 1 month</phrase>
+		<phrase var_name="Join as Dating User" added="1624260967">Join as Dating User</phrase>
+		<phrase var_name="Welcome to Dating" added="1624260967">Welcome to Dating</phrase>
+		<phrase var_name="Participate in Dating" added="1624260967">Participate in Dating</phrase>
+		<phrase var_name="Successfully Joined, now Please fill your Dating Profile" added="1624260967">Successfully Joined, now Please fill your Dating Profile</phrase>
+		<phrase var_name="Best Dating profiles" added="1624260967">Best Dating profiles</phrase>
+		<phrase var_name="Looking for:" added="1624260967">Looking for:</phrase>
+		<phrase var_name="Max size for video(mb)" added="1624260967">Max size for video(mb)</phrase>
+		<phrase var_name="Max size for photo(mb)" added="1624260967">Max size for photo(mb)</phrase>
+		<phrase var_name="Enable video" added="1624260967">Enable video</phrase>
+		<phrase var_name="Welcome to Dating Module!" added="1624260967">Welcome to Dating Module!</phrase>
+		<phrase var_name="dating_like_text" added="1624260967">{title} Liked you!</phrase>
+		<phrase var_name="dating_mutual_text" added="1624260967">{title} sent your Mutual Like!</phrase>
+		<phrase var_name="Add favourite" added="1624260967">Add favourite</phrase>
+		<phrase var_name="Remove favourite" added="1624260967">Remove favourite</phrase>
+		<phrase var_name="users_you_may_know" added="1624260967">users_you_may_know</phrase>
+		<phrase var_name="Field successfully deleted" added="1624260967">Field successfully deleted</phrase>
+		<phrase var_name="Field successfully updated" added="1624260967">Field successfully updated</phrase>
+		<phrase var_name="Field successfully added" added="1624260967">Field successfully added</phrase>
+		<phrase var_name="Edit Field" added="1624260967">Edit Field</phrase>
+		<phrase var_name="Create Field" added="1624260967">Create Field</phrase>
+		<phrase var_name="Manage Fields" added="1624260967">Manage Fields</phrase>
+		<phrase var_name="Successfully deleted photo" added="1624260967">Successfully deleted photo</phrase>
+		<phrase var_name="Dating Statistic" added="1624260967">Dating Statistic</phrase>
+		<phrase var_name="Successfully deleted video" added="1624260967">Successfully deleted video</phrase>
+		<phrase var_name="Dating" added="1624260967">Dating</phrase>
+		<phrase var_name="Skipped Users" added="1624260967">Skipped Users</phrase>
+		<phrase var_name="Search users" added="1624260967">Search users</phrase>
+		<phrase var_name="latest" added="1624260967">Latest</phrase>
+		<phrase var_name="Favourite Users" added="1624260967">Favourite Users</phrase>
+		<phrase var_name="Filters was cleaned." added="1624260967">Filters was cleaned.</phrase>
+		<phrase var_name="Search in name or email" added="1624260967">Search in name or email</phrase>
+		<phrase var_name="Datings" added="1624260967">Datings</phrase>
+		<phrase var_name="Buy sponsored dating profile" added="1624260967">Buy sponsored dating profile</phrase>
+		<phrase var_name="Profile successfully sponsored!" added="1624260967">Profile successfully sponsored!</phrase>
+		<phrase var_name="Not enough user balance, Please add funds!" added="1624260967">Not enough user balance, Please add funds!</phrase>
+		<phrase var_name="Mutual Likes" added="1624260967">Mutual Likes</phrase>
+		<phrase var_name="I like" added="1624260967">I like</phrase>
+		<phrase var_name="Photos" added="1624260967">Photos</phrase>
+		<phrase var_name="Video Successfully deleted" added="1624260967">Video Successfully deleted</phrase>
+		<phrase var_name="Videos" added="1624260967">Videos</phrase>
+		<phrase var_name="Who liked Me" added="1624260967">Who liked Me</phrase>
+		<phrase var_name="Yes" added="1624260967">Yes</phrase>
+		<phrase var_name="No" added="1624260967">No</phrase>
+		<phrase var_name="Mutual Like" added="1624260967">Mutual Like</phrase>
+		<phrase var_name="Skipped" added="1624260967">Skipped</phrase>
+		<phrase var_name="Sent Like" added="1624260967">Sent Like</phrase>
+		<phrase var_name="sent your like" added="1624260967">sent your like</phrase>
+		<phrase var_name="My Likes" added="1624260967">My Likes</phrase>
+		<phrase var_name="I Like" added="1624260967">I Like</phrase>
+		<phrase var_name="Who Likes me" added="1624260967">Who Likes me</phrase>
+		<phrase var_name="Already viewed" added="1624260967">Already viewed</phrase>
+		<phrase var_name="My Favourite Users" added="1624260967">My Favourite Users</phrase>
+		<phrase var_name="Please provide a valid URL." added="1624260967">Please provide a valid URL.</phrase>
+		<phrase var_name="Video of user" added="1624260967">Video of user</phrase>
+		<phrase var_name="Find your Love" added="1624260967">Find your Love</phrase>
+		<phrase var_name="update dating profile" added="1624260967">update dating profile</phrase>
+		<phrase var_name="Search keyword" added="1624260967">Search keyword</phrase>
+		<phrase var_name="Location" added="1624260967">Location</phrase>
+		<phrase var_name="Select Country" added="1624260967">Select Country</phrase>
+		<phrase var_name="Gender" added="1624260967">Gender</phrase>
+		<phrase var_name="Male" added="1624260967">Male</phrase>
+		<phrase var_name="Female" added="1624260967">Female</phrase>
+		<phrase var_name="City" added="1624260967">City</phrase>
+		<phrase var_name="Age" added="1624260967">Age</phrase>
+		<phrase var_name="From" added="1624260967">From</phrase>
+		<phrase var_name="to" added="1624260967">to</phrase>
+		<phrase var_name="Start dating" added="1624260967">Start dating</phrase>
+		<phrase var_name="New Users" added="1624260967">New Users</phrase>
+		<phrase var_name="Sponsored Profiles" added="1624260967">Sponsored Profiles</phrase>
+		<phrase var_name="Sponsor your profile here!" added="1624260967">Sponsor your profile here!</phrase>
+		<phrase var_name="Field name" added="1624260967">Field name</phrase>
+		<phrase var_name="Type" added="1624260967">Type</phrase>
+		<phrase var_name="Include in search" added="1624260967">Include in search</phrase>
+		<phrase var_name="submit" added="1624260967">Submit</phrase>
+		<phrase var_name="Name" added="1624260967">Name</phrase>
+		<phrase var_name="Is search" added="1624260967">Is search</phrase>
+		<phrase var_name="Manage" added="1624260967">Manage</phrase>
+		<phrase var_name="edit" added="1624260967">Edit</phrase>
+		<phrase var_name="delete" added="1624260967">Delete</phrase>
+		<phrase var_name="There are no fields for manage" added="1624260967">There are no fields for manage</phrase>
+		<phrase var_name="Display" added="1624260967">Display</phrase>
+		<phrase var_name="Sort" added="1624260967">Sort</phrase>
+		<phrase var_name="reset" added="1624260967">Reset</phrase>
+		<phrase var_name="Image" added="1624260967">Image</phrase>
+		<phrase var_name="User" added="1624260967">User</phrase>
+		<phrase var_name="Main Information" added="1624260967">Main Information</phrase>
+		<phrase var_name="Total Likes" added="1624260967">Total Likes</phrase>
+		<phrase var_name="Total Mutual Likes" added="1624260967">Total Mutual Likes</phrase>
+		<phrase var_name="Total Skipped" added="1624260967">Total Skipped</phrase>
+		<phrase var_name="Total Favourites" added="1624260967">Total Favourites</phrase>
+		<phrase var_name="likes" added="1624260967">likes</phrase>
+		<phrase var_name="mutual likes" added="1624260967">mutual likes</phrase>
+		<phrase var_name="users" added="1624260967">users</phrase>
+		<phrase var_name="Content" added="1624260967">Content</phrase>
+		<phrase var_name="Total Photos" added="1624260967">Total Photos</phrase>
+		<phrase var_name="Total Videos" added="1624260967">Total Videos</phrase>
+		<phrase var_name="Users" added="1624260967">Users</phrase>
+		<phrase var_name="Total Sponsored" added="1624260967">Total Sponsored</phrase>
+		<phrase var_name="Total Excluded users" added="1624260967">Total Excluded users</phrase>
+		<phrase var_name="Total filled dating fields" added="1624260967">Total filled dating fields</phrase>
+		<phrase var_name="Title" added="1624260967">Title</phrase>
+		<phrase var_name="No favourites users found." added="1624260967">No favourites users found.</phrase>
+		<phrase var_name="No skipped users found." added="1624260967">No skipped users found.</phrase>
+		<phrase var_name="User Group:" added="1624260967">User Group:</phrase>
+		<phrase var_name="Zip:" added="1624260967">Zip:</phrase>
+		<phrase var_name="Advanced Filters" added="1624260967">Advanced Filters</phrase>
+		<phrase var_name="Reset Filters" added="1624260967">Reset Filters</phrase>
+		<phrase var_name="Toggle Filter" added="1624260967">Toggle Filter</phrase>
+		<phrase var_name="Your love coming soon..." added="1624260967">Your love coming soon...</phrase>
+		<phrase var_name="No members found." added="1624260967">No members found.</phrase>
+		<phrase var_name="Select your package (click on button) and buy that your dating profile have more views. Increasing views count x10." added="1624260967">Select your package (click on button) and buy that your dating profile have more views. Increasing views count x10.</phrase>
+		<phrase var_name="Make Sponsored" added="1624260967">Make Sponsored</phrase>
+		<phrase var_name="Buy" added="1624260967">Buy</phrase>
+		<phrase var_name="for 1 day" added="1624260967">for 1 day</phrase>
+		<phrase var_name="for 1 week" added="1624260967">for 1 week</phrase>
+		<phrase var_name="for 1 month" added="1624260967">for 1 month</phrase>
+		<phrase var_name="You have enabled sponsored. Date end:" added="1624260967">You have enabled sponsored. Date end:</phrase>
+		<phrase var_name="Dating information" added="1624260967">Dating information</phrase>
+		<phrase var_name="Please fill dating information, that users who want to meet have enough information about you. Please be honest." added="1624260967">Please fill dating information, that users who want to meet have enough information about you. Please be honest.</phrase>
+		<phrase var_name="Exclude my profile from dating results" added="1624260967">Exclude my profile from dating results</phrase>
+		<phrase var_name="Update" added="1624260967">Update</phrase>
+		<phrase var_name="You have not mutual likes" added="1624260967">You have not mutual likes</phrase>
+		<phrase var_name="Like sent" added="1624260967">Like sent</phrase>
+		<phrase var_name="You not like any users." added="1624260967">You not like any users.</phrase>
+		<phrase var_name="Max size:" added="1624260967">Max size:</phrase>
+		<phrase var_name="Mb" added="1624260967">Mb</phrase>
+		<phrase var_name="upload" added="1624260967">Upload</phrase>
+		<phrase var_name="Manage photos, if you click on photo you will setup it as default for you dating profile" added="1624260967">Manage photos, if you click on photo you will setup it as default for you dating profile</phrase>
+		<phrase var_name="Delete this image" added="1624260967">Delete this image</phrase>
+		<phrase var_name="Active Now" added="1624260967">Active Now</phrase>
+		<phrase var_name="Active" added="1624260967">Active</phrase>
+		<phrase var_name="Following" added="1624260967">Following</phrase>
+		<phrase var_name="Follow" added="1624260967">Follow</phrase>
+		<phrase var_name="What do you think?" added="1624260967">What do you think?</phrase>
+		<phrase var_name="Awaiting:" added="1624260967">Awaiting:</phrase>
+		<phrase var_name="Profile Info" added="1624260967">Profile Info</phrase>
+		<phrase var_name="Dating Info" added="1624260967">Dating Info</phrase>
+		<phrase var_name="Badges" added="1624260967">Badges</phrase>
+		<phrase var_name="Read today horoscope" added="1624260967">Read today horoscope</phrase>
+		<phrase var_name="User have not provide dating information." added="1624260967">User have not provide dating information.</phrase>
+		<phrase var_name="Sorry but user not uploaded any images." added="1624260967">Sorry but user not uploaded any images.</phrase>
+		<phrase var_name="Sorry but user not uploaded any videos." added="1624260967">Sorry but user not uploaded any videos.</phrase>
+		<phrase var_name="User not got any badges yet." added="1624260967">User not got any badges yet.</phrase>
+		<phrase var_name="There are no users by your criteria, please simplify them." added="1624260967">There are no users by your criteria, please simplify them.</phrase>
+		<phrase var_name="Share url" added="1624260967">Share url</phrase>
+		<phrase var_name="or Upload video" added="1624260967">or Upload video</phrase>
+		<phrase var_name="Upload video" added="1624260967">Upload video</phrase>
+		<phrase var_name="Video Title" added="1624260967">Video Title</phrase>
+		<phrase var_name="back to Share options" added="1624260967">back to Share options</phrase>
+		<phrase var_name="Add video" added="1624260967">Add video</phrase>
+		<phrase var_name="You have not any likes." added="1624260967">You have not any likes.</phrase>
+	</phrases>
+</module>
